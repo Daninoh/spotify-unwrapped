@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7caf72;
+    background-image: url("img/background-white.png");
+    background-size:;
+}
+
+.left {
+    position: absolute;
+    background-image: url("img/side-background-green.png");
+    background-repeat: repeat;
+    width: 26.45%;
+    height: 100vh;
+    z-index: -99;
+}
+
+.right {
+    position: absolute;
+    background-image: url("img/side-background-green.png");
+    background-repeat: repeat;
+    right: 0;
+    width: 26.55%;
+    height: 100vh;
+    z-index: -99;
+}
+.main {
+    position: absolute;
+    width: 100%;
+}
+
+.top img {
+    width: 100%;
+    position: relative;
+}
+
+.icon {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+.icon img {
+    display: block;
+    width: 150px;
+    margin: auto;
+}
