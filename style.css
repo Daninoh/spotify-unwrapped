@@ -25,7 +25,6 @@ h1 {
   font-weight: 700;
   font-size: 3em;
   font-style: normal;
-  margin-top: 1rem;
 }
 
 button {
@@ -53,6 +52,7 @@ p b {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .gift {
@@ -61,7 +61,7 @@ p b {
   display: block;
 }
 
-.gift-container img:hover {
+.gift-container img.gift:hover {
   transform: rotate(1deg);
 }
 
@@ -136,6 +136,26 @@ p b {
   background-image: url("img/refresh-butt-close.png");
 }
 
+.draggable {
+  z-index: 99;
+}
+
+.draggable:hover {
+  transform: rotate(1deg);
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  z-index: 99;
+}
+
+.draggable:active {
+  transform: scale(105%);
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  z-index: 99;
+}
+
 .edge-col {
   background-image: url("img/side-background-green.png");
   background-repeat: repeat;
@@ -146,11 +166,17 @@ p b {
   width: 30%;
 }
 
+.sticker-portrait {
+  display: block;
+  margin: auto;
+  height: 300px;
+}
+
 .inline-portrait {
   display: block;
   height: 220px;
-  /* float: left; */
-  margin-left: auto;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .edge-col-top {
