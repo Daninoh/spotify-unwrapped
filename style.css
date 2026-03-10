@@ -10,6 +10,7 @@
 
 html,
 body {
+  min-width: 1000px;
   height: 100%;
   overscroll-behavior: none;
 }
@@ -30,23 +31,13 @@ p {
   margin-bottom: 2em;
 }
 
-.row {
-  display: flex;
-  width: 100%;
-}
-
 .spotify-embed {
   margin: auto;
 }
 
-.edge-col-top {
-  position: relative;
-  width: 25%;
-}
-
-.center-col-top {
-  position: relative;
-  width: 50%;
+.row {
+  display: flex;
+  width: 100%;
 }
 
 .center-col {
@@ -68,6 +59,16 @@ p {
   padding-right: 2em;
   padding-left: 2em;
   width: 25%;
+}
+
+.edge-col-top {
+  position: relative;
+  width: 25%;
+}
+
+.center-col-top {
+  position: relative;
+  width: 50%;
 }
 
 .edge-col-top img {
