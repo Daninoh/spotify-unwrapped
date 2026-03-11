@@ -44,22 +44,23 @@
                 </p>
                 <p>
                     I hope that your experience navigating this website is as delightful as creating it was for me.
-                    This website/visual essay was created for a course taught by <a href="https://elan.place/">Elan
-                        Ullendorf</a>, Escape the Algorithm. And sorry if you're on mobile. I didn't have the cognitive
-                    capacity to make it responsive.
+                    This website/visual essay was created for a course taught by <a href="https://elan.place/"
+                        target="_blank">Elan Ullendorf</a>, Escape the Algorithm. And sorry if you're on mobile. I
+                    didn't have the cognitive capacity to make it responsive.
                 </p>
                 <h2>Dedication</h2>
                 <p>
-                    It has been quite the semester for me, for reasons I won’t profess on a class assignment. My
-                    friends, however, have been incredible. I have had such a newfound respect and love for some of my
-                    closest friends, so I dedicate this project to them.
+                    It has been quite the year for me, for reasons I won’t profess on a class assignment. My friends,
+                    however, have been incredible. I have had such a newfound respect and love for some of my closest
+                    friends, so I dedicate this project to them.
                 </p>
                 <h2>Design & Development</h2>
                 <p>
                     This website was designed and developed, with delight and care, in HTML & CSS with a sprinkle of
                     JavaScript/jQuery. It is hosted on Github and you can judge my web development abilities <a
                         href="https://github.com/Daninoh/spotify-unwrapped" target="_blank">here</a>. The assets were
-                    all hand(-digitally) drawn on Adobe PSD. The fonts are <span
+                    all
+                    hand(-digitally) drawn on Adobe PSD. The fonts are <span
                         style="font-family:Poppins;font-size:1rem;font-weight:700">Poppins</span> & <span
                         style="font-weight: 600">Frank Ruhl Libre</span>, both available on Google Fonts.
                 </p>
@@ -97,44 +98,7 @@
 
             </div>
         </div>
-
-
     </footer>
-
-    <script>
-        const gifts = document.querySelectorAll(".gift");
-
-        gifts.forEach(gift => {
-            gift.addEventListener("mouseenter", () => {
-                gift.src = "img/gift-box-unwrap.png";
-            });
-
-            gift.addEventListener("mouseleave", () => {
-                gift.src = "img/gift-box.png";
-            });
-        });
-
-        const containers = document.querySelectorAll(".gift-container");
-
-        containers.forEach(container => {
-            const gift = container.querySelector(".gift");
-            const message = container.querySelector(".giftText");
-
-            gift.addEventListener("click", () => {
-                gift.style.display = "none";
-                message.classList.add("open");
-            });
-        });
-
-
-        // gift.addEventListener("mouseenter", () => {
-        //     gift.src = "img/gift-box-unwrap.png";
-        // });
-
-        // gift.addEventListener("mouseleave", () => {
-        //     gift.src = "img/gift-box.png";
-        // });
-    </script>
 </body>
 
 </html>
