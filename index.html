@@ -1,488 +1,635 @@
 <html>
+    <head>
+        <title>Spotify UnWrapped</title>
+        <link rel="stylesheet" href="style.css" />
 
-<head>
-    <title>Spotify UnWrapped</title>
-    <link rel="stylesheet" href="style.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png" />
+        <link rel="manifest" href="icon/site.webmanifest" />
+        <meta charset="UTF-8" />
+        <meta name="author" content="Daniel Noh" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png" />
-    <link rel="manifest" href="icon/site.webmanifest" />
-    <meta charset="UTF-8" />
-    <meta name="author" content="Daniel Noh" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-
-
-<body>
-    <header>
-        <div class="row">
-            <div class="edge-col-top">
-                <img src="img/top-left.png" draggable="false" />
-            </div>
-            <div class="center-col-top">
-                <img src="img/top-mid.png" draggable="false" />
-            </div>
-            <div class="edge-col-top">
-                <img src="img/top-right.png" draggable="false" />
-            </div>
-        </div>
-        <button class="refresh-butt" onClick="window.location.reload();" role="rewrap"></button>
-    </header>
-
-    <div class="row">
-        <div class="edge-col"></div>
-        <div class="center-col"></div>
-        <div class="edge-col"></div>
-    </div>
-
-    <main>
-        <!-- TOP OF PAGE -->
-        <div class="row" id="title">
-            <div class="edge-col"></div>
-            <div class="center-col">
-                <div class="icon">
-                    <img src="img/icon-page.png" draggable="false" />
+    <body>
+        <header>
+            <div class="row">
+                <div class="edge-col-top">
+                    <img src="img/top-left.png" draggable="false" />
                 </div>
-                <div class="title">
-                    <h1><span style="color: #1ed761;">Spotify</span> <span style="font-family: Frank Ruhl
-                    Libre;font-weight:400">UnWrapped</span></h1>
+                <div class="center-col-top">
+                    <img src="img/top-mid.png" draggable="false" />
+                </div>
+                <div class="edge-col-top">
+                    <img src="img/top-right.png" draggable="false" />
                 </div>
             </div>
-            <div class="edge-col"></div>
-        </div>
+            <button class="refresh-butt" onClick="window.location.reload();" role="rewrap"></button>
+        </header>
 
-        <!-- INTRODUCTION -->
-        <div class="row">
-            <div class="edge-col">
-                <img class="inline-img" draggable="false" src="img/prompted-playlist.png">
-            </div>
-            <div class="center-col">
-                <p>
-                    For almost every single week in the past decade, I have opened up Spotify on Monday morning to
-                    listen to my Discover Weekly. Sometimes the entire playlist would be a flop. Sometimes I would get a
-                    bop, quickly saving the song into my Liked Songs (now at 5,400+ songs), never to encounter the track
-                    again. Discover Weekly, in 2025, recorded more than 100 <i>billion</i> tracks streamed since its
-                    release [<a
-                        href="https://newsroom.spotify.com/2025-06-30/discover-weekly-turns-10-celebrating-100-billion-tracks-streamed-and-a-decade-of-personalized-discovery/">1</a>].
-                    Spotify is now inundated with a dozen ways to use AI to navigate complex web that makes up the music
-                    industry. From Discover Weekly came Release Radar to Daily Mixes to Genre Mixes to DJ and now...
-                    <b>Prompted Playlists</b>, a feature that allows users to type in text prompts to generate
-                    playlists. With little faith and morbid curiosity, I clicked on the feature and typed the following
-                    prompt: <q>Make a playlist of songs and artists I have never heard of but are similar to the music I
-                        listen to (e.g., Katie Tupper, Lawrence).</q> And thus, <b>Hidden Gems</b> was born.
-                </p>
-                <iframe class="inline-spotify" data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/37i9dQZF1FwKeby8xITu1V?utm_source=generator"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-            </div>
-            <div class="edge-col">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="edge-col">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/6VnosvUghW97WXBPTWHDet?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/1HadQI0LBZKqF2J6iTRn0t?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-            </div>
-            <div class="center-col">
-                <p>
-                    A keen reader may notice that the playlist is, in fact, not full of hidden gems. <b>Wild Rivers</b>
-                    and <b>Re:um</b> were new to me, and honestly... surprisingly pleasant! But Olivia Dean? Harry
-                    Styles? Noah Kahan? Bruno Mars? Fleetwood Mac? Amy Winehouse? <b>Vienna</b> by BILLY JOEL?
-                    Preposterous. The description for the playlist that Spotify decided to generate mockingly read,
-                    <q>Soul-soaked grooves meet indie sunshine</q> [and note the em dash]—<q>'Baby Steps' and 'End of
-                        Beginning' lead this fresh batch of feel-good jams you somehow haven't spun yet.</q> Hah.
-                </p>
-                <p>
-                    Years ago (circa 2010), before my music tastes became enmeshed by the whims of Spotify's algorithmic
-                    systems, I frequented a website called <a href="https://hypem.com/popular" target="_blank">Hype
-                        Machine</a> to find the newest, hypest music. Rather than relying on personalized data, Hype
-                    Machine
-                    gathers new songs across hundreds of music websites, populating its <q>Popular</q> page with most
-                    liked songs from Hype Machine users. Hype Machine was how I found now popular musicians such as
-                    <b>Jaymes Young</b>, and also smaller artists like <b>Lewis Del Mar</b> & <b>Woolf and
-                        Wondershow</b>. I remember the sheer delight of finding a new song to jam out to. Discovering
-                    music so wonderful, there is something so <i>human</i> about sifting through the noise to
-                    discover a hidden gem (and truly a <i>hidden</i> gem). Something about a necessary friction to
-                    engage with the more ephemeral aspects (e.g., delight, curiosity) of how we navigate our world.
-                </p>
-                <p>
-                    I, along with my friends, am now approaching the age where, reportedly [<a
-                        href="https://www.businessinsider.com/why-we-stop-discovering-new-music-around-age-30-2018-6">2</a>,
-                    <a href="https://www.statsignificant.com/p/when-do-we-stop-finding-new-music">3</a>, <a
-                        href="https://skynetandebert.com/2015/04/22/music-was-better-back-then-when-do-we-stop-keeping-up-with-popular-music/">4</a>]
-                    my music taste will stagnate, where my <q>ability to keep up with music trends peters off</q> [<a
-                        href="https://www.businessinsider.com/why-we-stop-discovering-new-music-around-age-30-2018-6">2</a>].
-                    User research from Spotify [<a
-                        href="https://research.atspotify.com/2018/07/understanding-and-evaluating-user-satisfaction-with-music-discovery">5</a>]
-                    notes that <q>it just takes <i>one</i> great recommendation to make users feel satisfied.</q>
-                    I am, unfortunately, not satisfied. I cannot let <i>one great recommendation</i> be my only source
-                    of exercising my ability to keep up with music trends. Thus, we turn to my escape algorithm.
-                </p>
-            </div>
-            <div class="edge-col">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/5pLjOLnVVOVK6uvHmhBz8f?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/6IexNWMbsvI5x0T0CQX3yT?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/6veZKnuUIUIsc7gZTFW4lQ?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col" style="margin-bottom: 2rem;">
-                <h1>Escape Algorithm</h1>
-                <p>
-                    Traditionally speaking, algorithmic systems, particularly ones that need to collect data on users,
-                    have been seen as extractive [<a href="https://ghostwork.info/">6</a>], thievery [<a
-                        href="https://www.nytimes.com/2025/10/22/technology/reddit-data-scrapers-perplexity-theft.html">7</a>],
-                    or outright illegal [<a href="https://www.bbc.com/news/articles/cdxevpzy3yko">8</a>]. How, then,
-                    might a <i>caring</i> algorithm be embodied? Perhaps something that furthers relations, is
-                    mutually beneficial, and provides delight to both the giver and receiver.
-                </p>
-                <p>
-                    From the escape algorithm, I was particularly delighted by the reaction of the user tests on the
-                    <b>Follow the Fans</b> algorithm. The participants seemed to enjoy the process, liked that they were
-                    able to discover new bands or artists, and it all resulted in a new playlist they could listen to.
-                    As a participant noted, <q>This was my favorite. I actually think it is going to change what I
-                        listen to on Spotify and I kinda love the idea of having a Follow the Fans playlist.</q>
-                </p>
-                <p>
-                    So I presented this algorithm as a gift to five of my closest friends, [J], [R], [K], [L] & [C],
-                    giving <b>Spotify Wrapped</b> a new meaning.
-                </p>
-            </div>
-            <div class="edge-col">
-                <img src="img/escape-algorithm.png" class="inline-img" draggable="false">
-            </div>
-        </div>
-
-        <!-- FIRST GIFT TO J -->
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col">
-                <h1>The First Gift</h1>
-            </div>
-            <div class="edge-col"></div>
-        </div>
-
-        <div class="row">
-            <div class="edge-col">
-                <img class="sticker-portrait draggable" src="img/j-sketch-white.png">
-            </div>
-            <div class="center-col">
-                <div class="gift-container" id="giftContainer">
-                    <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box">
-                    <div class="giftText" id="giftText">
-                        <img class="inline-portrait" src="img/j-sketch-nostick.png">
-                        <p>
-                            [J] is one of my longest friends. We went to high school together, but only really became
-                            close once we went our separate ways in college. She lives in New York, but I often visit
-                            for major holidays (e.g., Christmas, Thanksgiving) or to take advantage of her journalistic
-                            privileges through press tickets to Broadway shows. We listen to <b>A Charlie Brown
-                                Thanksgiving</b>, every Thanksgiving. She loves Charlie Brown, arguably, too much. She
-                            also loves various show tunes, such as <b>Sunday in the Park with George</b>, a Sondheim
-                            classic. These are quite literally the only things we have listened to together in over a
-                            decade of friendship.
-                        </p>
+        <main>
+            <!-- TOP OF PAGE -->
+            <div class="row" id="title">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <div class="icon">
+                        <img src="img/icon-page.png" draggable="false" />
+                    </div>
+                    <div class="title">
+                        <h1>
+                            <span style="color: #1ed761">Spotify</span>
+                            <span style="font-family: Frank Ruhl Libre; font-weight: 400">UnWrapped</span>
+                        </h1>
                     </div>
                 </div>
-
+                <div class="edge-col"></div>
             </div>
-            <div class="edge-col">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/5JcfYR59V1GNU0KXCjgpJU?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/3hczeRM7uXxzSv42p3d29U?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <!-- INTRODUCTION -->
+            <div class="row">
+                <div class="edge-col">
+                    <img class="inline-img" draggable="false" src="img/prompted-playlist.png" />
+                </div>
+                <div class="center-col">
+                    <p>
+                        For almost every single week in the past decade, I have opened up Spotify on Monday morning to
+                        listen to my Discover Weekly. Sometimes the entire playlist would be a flop. Sometimes I would
+                        get a bop, quickly saving the song into my Liked Songs (now at 5,400+ songs), never to encounter
+                        the track again. Discover Weekly, in 2025, recorded more than 100 <i>billion</i> tracks streamed
+                        since its release [<a
+                            href="https://newsroom.spotify.com/2025-06-30/discover-weekly-turns-10-celebrating-100-billion-tracks-streamed-and-a-decade-of-personalized-discovery/"
+                            >1</a
+                        >]. Spotify is now inundated with a dozen ways to use AI to navigate complex web that makes up
+                        the music industry. From Discover Weekly came Release Radar, Daily Mixes, Genre Mixes, Artist
+                        Radios, DJ, and now... <b>Prompted Playlists</b>, a feature that allows users to type in text
+                        prompts to generate playlists. With little faith and morbid curiosity, I clicked on the feature
+                        and typed the following prompt:
+                        <q
+                            >Make a playlist of songs and artists I have never heard of but are similar to the music I
+                            listen to (e.g., Katie Tupper, Lawrence).</q
+                        >
+                        And thus, <b>Hidden Gems</b> was born.
+                    </p>
+                    <iframe
+                        class="inline-spotify"
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1FwKeby8xITu1V?utm_source=generator"
+                        width="100%"
+                        height="352"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+                <div class="edge-col"></div>
             </div>
-        </div>
 
-        <!-- SECOND GIFT TO R -->
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col">
-                <h1>The Second Gift</h1>
-            </div>
-            <div class="edge-col"></div>
-        </div>
-
-        <div class="row">
-            <div class="edge-col">
-                <img class="sticker-portrait draggable" src="img/r-sketch-white.png">
-            </div>
-            <div class="center-col">
-                <div class="gift-container" id="giftContainer">
-                    <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box">
-                    <div class="giftText" id="giftText">
-                        <img class="inline-portrait" src="img/r-sketch-nostick.png">
-                        <p>
-                            [R] is also a dear friend from college. We have been roommates, on and off, for around 5
-                            years. is more of a classic rock kind of guy. Songs by <b>Daryl Hall & John Oates</b> or
-                            <b></b>… but also the occasional [Mitski]? They both love [Flamingo?]. I hate that.
-                        </p>
-                    </div>
+            <div class="row">
+                <div class="edge-col">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/6VnosvUghW97WXBPTWHDet?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/1HadQI0LBZKqF2J6iTRn0t?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+                <div class="center-col">
+                    <p>
+                        A keen reader may notice that the playlist is, in fact, not full of hidden gems. If anything,
+                        these songs are hidden in plain sight.
+                        <b>Wild Rivers</b> and <b>Re:um</b> were new to me, and honestly... surprisingly pleasant! But
+                        Olivia Dean? Harry Styles? Noah Kahan? Bruno Mars? Fleetwood Mac? Amy Winehouse?
+                        <b>Vienna</b> by BILLY JOEL? Preposterous. The description for the playlist that Spotify decided
+                        to generate mockingly read, <q>Soul-soaked grooves meet indie sunshine</q>, and note the em
+                        dash,
+                        <q
+                            >—'Baby Steps' and 'End of Beginning' lead this fresh batch of feel-good jams you somehow
+                            haven't spun yet.</q
+                        >
+                        Hah.
+                    </p>
+                    <p>
+                        To add salt to my wound, Spotify added a couple of prompted playlists, created by yours truly
+                        (the Spotify team), to my homepage. <b>Flirt For Me.</b> What do you mean... Flirt For Me? Out
+                        of sheer curiosity, I tapped on the playlist. A slowly scrolled down, reading the prompt with a
+                        concerned scowl:
+                    </p>
+                    <p>
+                        <img
+                            class="inline-img"
+                            src="img/prompt-2.png"
+                            alt="Prompt by Spotify reads: Put together a playlist of songs that do the flirting for me, just in time for Valentine's Day. I want to impress my crush with a collection of songs that hint, tease, and confess without ever saying the words. Every song should feel like a text I'm too scared to send: equal parts butterflies, longing, and nervous humor. The vibe is similing into your phone, overanalyzing emojis, and pretending it's just music. By the end, they should know and figure out that I'm into them. Focus on songs you think I'd like based on my listening history. You can includ both songs I know and songs I haven't heard yet."
+                        />
+                    </p>
+                    <p>Romance is dead. Eviscerated by AI. Take me back to the days of cassette mixtapes.</p>
+                </div>
+                <div class="edge-col">
+                    <img class="inline-img" src="img/prompt-1.png" />
                 </div>
             </div>
-            <div class="edge-col">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/5FJtLMs3dkq0K28v69lbRb?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-        </div>
 
-        <!-- THIRD GIFT TO K -->
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col">
-                <h1>The Third Gift</h1>
-            </div>
-            <div class="edge-col"></div>
-        </div>
-
-        <div class="row">
-            <div class="edge-col">
-                <img class="sticker-portrait draggable" src="img/k-sketch-white.png">
-            </div>
-            <div class="center-col">
-                <div class="gift-container" id="giftContainer">
-                    <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box">
-                    <div class="giftText" id="giftText">
-                        <img class="inline-portrait" src="img/k-sketch-nostick.png">
-                        <p>
-                            [K] is a dear friend from college where we studied architecture together, eventually living
-                            together in Boston. We don't quite remember how we got close to each other, but the mutual
-                            trauma of being in studio together into the wee hours definitely helped. We listen to all
-                            sorts of music together, having been to a music festival together with one of the most
-                            <i>elite</i> line-ups: Hozier, Chappell Roan, Megan Thee Stallion, The Killers, Lovejoy,
-                            Royel Otis. The latter two make a comeback later in this essay, keep an eye out. I know that
-                            [K] listens to a variety, from <b>Chappell Roan</b> to <b>Yaeji</b> to Sweater Weather. She
-                            always has a lookout for new music... this list is <i>certainly</i> outdated.
-                        </p>
-                    </div>
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <p>
+                        Years ago (circa 2010), before my music tastes became enmeshed by the whims of Spotify's
+                        algorithmic system, I frequented a website called
+                        <a href="https://hypem.com/popular" target="_blank">Hype Machine</a> to find the newest and,
+                        dare-I-say, hypest music. Rather than relying on personalized data, Hype Machine gathers new
+                        songs across hundreds of music websites, populating its <q>Popular</q> page with the most liked
+                        songs from Hype Machine users. Hype Machine was how I found now popular musicians such as
+                        <b>Jaymes Young</b> and smaller artists like <b>Lewis Del Mar</b> & <b>Woolf and Wondershow</b>.
+                        I remember the sheer delight of finding a new song to jam out to. Discovering music is so
+                        wonderful. There is something so <i>human</i> about sifting through the noise to discover a
+                        hidden gem (and truly a <i>hidden</i> gem). Something about a necessary friction to engage with
+                        the more ephemeral aspects (e.g., delight, curiosity) of how we navigate our world.
+                    </p>
+                    <p>
+                        Sadly, that was then. Now, I am, along with my friends, now approaching the age (30, but don't
+                        ask about my age) where, reportedly [<a
+                            href="https://www.businessinsider.com/why-we-stop-discovering-new-music-around-age-30-2018-6"
+                            >2</a
+                        >, <a href="https://www.statsignificant.com/p/when-do-we-stop-finding-new-music">3</a>,
+                        <a
+                            href="https://skynetandebert.com/2015/04/22/music-was-better-back-then-when-do-we-stop-keeping-up-with-popular-music/"
+                            >4</a
+                        >], my music taste will stagnate, where my
+                        <q>ability to keep up with music trends peters off</q> [<a
+                            href="https://www.businessinsider.com/why-we-stop-discovering-new-music-around-age-30-2018-6"
+                            >2</a
+                        >].
+                    </p>
+                    <p>
+                        User research of Discover Weekly from Spotify [<a
+                            href="https://research.atspotify.com/2018/07/understanding-and-evaluating-user-satisfaction-with-music-discovery"
+                            >5</a
+                        >] notes that
+                        <q>it just takes <i>one</i> great recommendation to make users feel satisfied.</q> I am,
+                        unfortunately, not satisfied. I cannot let <i>one great recommendation</i> be my only way of
+                        exercising my ability to keep up with music trends. Thus, we turn to my escape algorithm.
+                    </p>
+                </div>
+                <div class="edge-col">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/5pLjOLnVVOVK6uvHmhBz8f?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/6IexNWMbsvI5x0T0CQX3yT?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/6veZKnuUIUIsc7gZTFW4lQ?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
                 </div>
             </div>
-            <div class="edge-col">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/5FJtLMs3dkq0K28v69lbRb?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-        </div>
 
-        <!-- FOURTH GIFT TO L -->
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col">
-                <h1>The Fourth Gift</h1>
-            </div>
-            <div class="edge-col"></div>
-        </div>
-
-        <div class="row">
-            <div class="edge-col">
-                <img class="sticker-portrait draggable" src="img/l-sketch-white.png">
-            </div>
-            <div class="center-col">
-                <div class="gift-container" id="giftContainer">
-                    <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box">
-                    <div class="giftText" id="giftText">
-                        <img class="inline-portrait" src="img/l-sketch-nostick.png">
-                        <p>
-                            [L] is one of my closest friends in Philly. We work together. They love reggaeton, including
-                            [Bad Bunny], but who doesn’t? [L] also frequents jazzy classics like [Alice Coltrane] and we
-                            have previously bonded over [Breathe]. He also has a breadth of taste.
-                        </p>
-                    </div>
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col" style="margin-bottom: 2rem">
+                    <h1>Escape Algorithm</h1>
+                    <p>
+                        Traditionally speaking, algorithmic systems, particularly ones that collect data on users, have
+                        been seen as extractive [<a href="https://ghostwork.info/">6</a>], thievery [<a
+                            href="https://www.nytimes.com/2025/10/22/technology/reddit-data-scrapers-perplexity-theft.html"
+                            >7</a
+                        >], or outright illegal [<a href="https://www.bbc.com/news/articles/cdxevpzy3yko">8</a>]. How,
+                        then, might a <i>caring</i> algorithm be designed? Perhaps something that furthers relations, is
+                        mutually beneficial, and provides delight to both the giver and receiver.
+                    </p>
+                    <p>
+                        From the escape algorithm, I was particularly delighted by the reaction of the user tests on the
+                        <b>Follow the Fans</b> algorithm. The participants seemed to enjoy the process, liked that they
+                        were able to discover new bands or artists, and it all resulted in a new playlist they could
+                        listen to. As a participant noted,
+                        <q
+                            >This was my favorite. I actually think it is going to change what I listen to on Spotify
+                            and I kinda love the idea of having a Follow the Fans playlist.</q
+                        >
+                    </p>
+                    <p>
+                        So I presented this algorithm as a gift to five of my closest friends, [J], [R], [K], [L] & [C],
+                        giving <b>Spotify Wrapped</b> a new meaning.
+                    </p>
+                </div>
+                <div class="edge-col">
+                    <img src="img/escape-algorithm.png" class="inline-img" draggable="false" />
                 </div>
             </div>
-            <div class="edge-col">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/5FJtLMs3dkq0K28v69lbRb?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-        </div>
 
-        <!-- FIFTH GIFT TO C -->
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col">
-                <h1>The Fifth Gift</h1>
+            <!-- FIRST GIFT TO J -->
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <h1>The First Gift</h1>
+                </div>
+                <div class="edge-col"></div>
             </div>
-            <div class="edge-col"></div>
-        </div>
 
-        <div class="row">
-            <div class="edge-col">
-                <img class="sticker-portrait draggable" src="img/c-sketch-white.png">
-            </div>
-            <div class="center-col">
-                <div class="gift-container" id="giftContainer">
-                    <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box">
-                    <div class="giftText" id="giftText">
-                        <img class="inline-portrait" src="img/c-sketch-nostick.png">
-                        <p>
-                            [C] is, yet again, also one of my closest friends in Philly. She… well I have no idea what
-                            she listens to. Generic good artists like [Hozier] and [Chappell], certainly. We jammed out
-                            to Mumford & Sons together recently. She listens to <b>Mhysa</b>, from Game of Thrones, and
-                            ambient background music when she works. But otherwise I’m not too sure.
-                        </p>
+            <div class="row">
+                <div class="edge-col">
+                    <img class="sticker-portrait draggable" src="img/j-sketch-white.png" />
+                </div>
+                <div class="center-col">
+                    <div class="gift-container" id="giftContainer">
+                        <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box" />
+                        <div class="giftText" id="giftText">
+                            <img class="inline-portrait" src="img/j-sketch-nostick.png" />
+                            <p>
+                                [J] is one of my longest friends. We went to high school together, but only really
+                                became close once we went our separate ways in college. She lives in New York, but I
+                                often visit for major holidays (e.g., Christmas, Thanksgiving) or to take advantage of
+                                her journalistic privileges through press tickets to Broadway shows. We listen to
+                                <b>A Charlie Brown Thanksgiving</b>, every Thanksgiving. She loves Charlie Brown,
+                                arguably, too much. She also loves various show tunes, such as
+                                <b>Sunday in the Park with George</b>, a Sondheim classic. These are quite literally the
+                                only things we have listened to together in over a decade of friendship.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <div class="edge-col">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/5JcfYR59V1GNU0KXCjgpJU?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/3hczeRM7uXxzSv42p3d29U?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
             </div>
-            <div class="edge-col">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
-                fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/4wxaEgPlUbEUwiAnThBUkw?utm_source=generator" width="100%"
-                    height="100" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+
+            <!-- SECOND GIFT TO R -->
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <h1>The Second Gift</h1>
+                </div>
+                <div class="edge-col"></div>
             </div>
-        </div>
 
-        <!-- SIXTH GIFT TO ME! -->
-
-        <!-- CONCLUSION -->
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col">
-                <p>
-                    Music, they say, is a window into a person’s soul. As Aristotle said, “Music directly represents the
-                    passions of the soul.” But, then again, you can find just about any quote from some notable
-                    character from the past.
-                </p>
+            <div class="row">
+                <div class="edge-col">
+                    <img class="sticker-portrait draggable" src="img/r-sketch-white.png" />
+                </div>
+                <div class="center-col">
+                    <div class="gift-container" id="giftContainer">
+                        <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box" />
+                        <div class="giftText" id="giftText">
+                            <img class="inline-portrait" src="img/r-sketch-nostick.png" />
+                            <p>
+                                [R] is also a dear friend from college. We have been roommates, on and off, for around 5
+                                years. is more of a classic rock kind of guy. Songs by <b>Daryl Hall & John Oates</b> or
+                                <b></b>… but also the occasional [Mitski]? They both love [Flamingo?]. I hate that.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edge-col">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/5FJtLMs3dkq0K28v69lbRb?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
             </div>
-            <div class="edge-col"></div>
-        </div>
 
-        <div class="row">
-            <div class="edge-col"></div>
-            <div class="center-col"></div>
-            <div class="edge-col"></div>
-        </div>
+            <!-- THIRD GIFT TO K -->
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <h1>The Third Gift</h1>
+                </div>
+                <div class="edge-col"></div>
+            </div>
 
-        <!-- <div class="row">
+            <div class="row">
+                <div class="edge-col">
+                    <img class="sticker-portrait draggable" src="img/k-sketch-white.png" />
+                </div>
+                <div class="center-col">
+                    <div class="gift-container" id="giftContainer">
+                        <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box" />
+                        <div class="giftText" id="giftText">
+                            <img class="inline-portrait" src="img/k-sketch-nostick.png" />
+                            <p>
+                                [K] is a dear friend from college where we studied architecture together, eventually
+                                living together in Boston. We don't quite remember how we got close to each other, but
+                                the mutual trauma of being in studio together into the wee hours definitely helped. We
+                                listen to all sorts of music together, having been to a music festival together with one
+                                of the most
+                                <i>elite</i> line-ups: Hozier, Chappell Roan, Megan Thee Stallion, The Killers, Lovejoy,
+                                Royel Otis. The latter two make a comeback later in this essay, keep an eye out. I know
+                                that [K] listens to a variety, from <b>Chappell Roan</b> to <b>Yaeji</b> to Sweater
+                                Weather. She always has a lookout for new music... this list is
+                                <i>certainly</i> outdated.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edge-col">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/5FJtLMs3dkq0K28v69lbRb?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+
+            <!-- FOURTH GIFT TO L -->
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <h1>The Fourth Gift</h1>
+                </div>
+                <div class="edge-col"></div>
+            </div>
+
+            <div class="row">
+                <div class="edge-col">
+                    <img class="sticker-portrait draggable" src="img/l-sketch-white.png" />
+                </div>
+                <div class="center-col">
+                    <div class="gift-container" id="giftContainer">
+                        <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box" />
+                        <div class="giftText" id="giftText">
+                            <img class="inline-portrait" src="img/l-sketch-nostick.png" />
+                            <p>
+                                [L] is one of my closest friends in Philly. We work together. They love reggaeton,
+                                including [Bad Bunny], but who doesn’t? [L] also frequents jazzy classics like [Alice
+                                Coltrane] and we have previously bonded over [Breathe]. He also has a breadth of taste.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edge-col">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/5FJtLMs3dkq0K28v69lbRb?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+
+            <!-- FIFTH GIFT TO C -->
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <h1>The Fifth Gift</h1>
+                </div>
+                <div class="edge-col"></div>
+            </div>
+
+            <div class="row">
+                <div class="edge-col">
+                    <img class="sticker-portrait draggable" src="img/c-sketch-white.png" />
+                </div>
+                <div class="center-col">
+                    <div class="gift-container" id="giftContainer">
+                        <img src="img/gift-box.png" draggable="false" class="gift" id="giftBox" alt="Gift Box" />
+                        <div class="giftText" id="giftText">
+                            <img class="inline-portrait" src="img/c-sketch-nostick.png" />
+                            <p>
+                                [C] is, yet again, also one of my closest friends in Philly. She… well I have no idea
+                                what she listens to. Generic good artists like [Hozier] and [Chappell], certainly. We
+                                jammed out to Mumford & Sons together recently. She listens to <b>Mhysa</b>, from Game
+                                of Thrones, and ambient background music when she works. But otherwise I’m not too sure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edge-col">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/4wxaEgPlUbEUwiAnThBUkw?utm_source=generator"
+                        width="100%"
+                        height="100"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+
+            <!-- SIXTH GIFT TO ME! -->
+
+            <!-- CONCLUSION -->
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col">
+                    <p>
+                        Music, they say, is a window into a person’s soul. As Aristotle said, “Music directly represents
+                        the passions of the soul.” But, then again, you can find just about any quote from some notable
+                        character from the past.
+                    </p>
+                </div>
+                <div class="edge-col"></div>
+            </div>
+
+            <div class="row">
+                <div class="edge-col"></div>
+                <div class="center-col"></div>
+                <div class="edge-col"></div>
+            </div>
+
+            <!-- <div class="row">
         <div class="edge-col"></div>
         <div class="center-col"></div>
         <div class="edge-col"></div>
     </div> -->
-
-    </main>
-    <footer>
-        <div class="row">
-            <div class="edge-col-top">
-                <img src="img/bottom-left.png" draggable="false" />
+        </main>
+        <footer>
+            <div class="row">
+                <div class="edge-col-top">
+                    <img src="img/bottom-left.png" draggable="false" />
+                </div>
+                <div class="center-col-top">
+                    <img src="img/top-mid.png" draggable="false" />
+                </div>
+                <div class="edge-col-top">
+                    <a href="colophon">
+                        <div class="colophon-door"></div>
+                    </a>
+                    <img src="img/bottom-right.png" draggable="false" />
+                </div>
             </div>
-            <div class="center-col-top">
-                <img src="img/top-mid.png" draggable="false" />
-            </div>
-            <div class="edge-col-top">
-                <a href="colophon">
-                    <div class="colophon-door"></div>
-                </a>
-                <img src="img/bottom-right.png" draggable="false" />
+        </footer>
 
-            </div>
-        </div>
-
-
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        // $(function () {
-        //     $(".draggable").draggable({
-        //         containment: "parent"
-        //     });
-        // });
-        $(function () {
-            $(".draggable").draggable();
-
-        });
-
-        const gifts = document.querySelectorAll(".gift");
-
-        gifts.forEach(gift => {
-            gift.addEventListener("mouseenter", () => {
-                gift.src = "img/gift-box-unwrap.png";
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            // $(function () {
+            //     $(".draggable").draggable({
+            //         containment: "parent"
+            //     });
+            // });
+            $(function () {
+                $(".draggable").draggable();
             });
 
-            gift.addEventListener("mouseleave", () => {
-                gift.src = "img/gift-box.png";
+            const gifts = document.querySelectorAll(".gift");
+
+            gifts.forEach((gift) => {
+                gift.addEventListener("mouseenter", () => {
+                    gift.src = "img/gift-box-unwrap.png";
+                });
+
+                gift.addEventListener("mouseleave", () => {
+                    gift.src = "img/gift-box.png";
+                });
             });
-        });
 
-        const containers = document.querySelectorAll(".gift-container");
+            const containers = document.querySelectorAll(".gift-container");
 
-        containers.forEach(container => {
-            const gift = container.querySelector(".gift");
-            const message = container.querySelector(".giftText");
+            containers.forEach((container) => {
+                const gift = container.querySelector(".gift");
+                const message = container.querySelector(".giftText");
 
-            gift.addEventListener("click", () => {
-                gift.style.display = "none";
-                message.classList.add("open");
+                gift.addEventListener("click", () => {
+                    gift.style.display = "none";
+                    message.classList.add("open");
+                });
             });
-        });
 
+            // gift.addEventListener("mouseenter", () => {
+            //     gift.src = "img/gift-box-unwrap.png";
+            // });
 
-        // gift.addEventListener("mouseenter", () => {
-        //     gift.src = "img/gift-box-unwrap.png";
-        // });
-
-        // gift.addEventListener("mouseleave", () => {
-        //     gift.src = "img/gift-box.png";
-        // });
-    </script>
-</body>
-
+            // gift.addEventListener("mouseleave", () => {
+            //     gift.src = "img/gift-box.png";
+            // });
+        </script>
+    </body>
 </html>
