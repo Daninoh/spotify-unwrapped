@@ -2,12 +2,23 @@
 
 :root {
   --spotify: #73dc99;
+  --spotify-dark: #0e853a;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  color: var(--spotify-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--spotify);
 }
 
 html,
@@ -33,25 +44,34 @@ h2 {
   font-style: normal;
 }
 
+iframe {
+  margin: auto;
+}
+
 button {
   background: none;
   border: none;
 }
 
 p {
+  position: relative;
   font-family: "Frank Ruhl Libre", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-size: 1.2rem;
   text-align: justify;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 p b {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.inline-spotify {
+  margin-bottom: 2rem;
 }
 
 .gift-container {
@@ -88,12 +108,6 @@ p b {
   height: 100%;
 }
 
-.spotify-embed {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin: auto;
-}
-
 .row {
   display: flex;
   width: 100%;
@@ -115,7 +129,7 @@ p b {
   height: 300px;
   right: 9rem;
   bottom: 3rem;
-  z-index: 99;
+  z-index: 98;
 }
 
 .colophon-door:hover {
@@ -135,7 +149,7 @@ p b {
   height: 300px;
   left: 8rem;
   bottom: 3rem;
-  z-index: 99;
+  z-index: 98;
 }
 
 .home-door:hover {
@@ -163,7 +177,7 @@ p b {
 }
 
 .draggable {
-  z-index: 99;
+  z-index: 98;
 }
 
 .draggable:hover {
@@ -171,7 +185,7 @@ p b {
   cursor: grab;
   cursor: -moz-grab;
   cursor: -webkit-grab;
-  z-index: 99;
+  z-index: 98;
 }
 
 .draggable:active {
@@ -179,7 +193,13 @@ p b {
   cursor: grabbing;
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
-  z-index: 99;
+  z-index: 98;
+}
+
+.inline-img {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .edge-col {
