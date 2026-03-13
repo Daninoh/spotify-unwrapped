@@ -127,8 +127,8 @@ p b {
     position: absolute;
     width: 300px;
     height: 300px;
-    right: 9rem;
-    bottom: 3rem;
+    right: 120px;
+    bottom: 34px;
     z-index: 98;
 }
 
@@ -147,8 +147,8 @@ p b {
     position: absolute;
     width: 300px;
     height: 300px;
-    left: 8rem;
-    bottom: 3rem;
+    left: 120px;
+    bottom: 42px;
     z-index: 98;
 }
 
@@ -231,7 +231,6 @@ p b {
     user-select: none;
     position: relative;
     width: 30%;
-    max-height: 250px;
 }
 
 .center-col-top {
@@ -240,7 +239,6 @@ p b {
     user-select: none;
     position: relative;
     width: 40%;
-    max-height: 250px;
 }
 
 .edge-col-top img {
