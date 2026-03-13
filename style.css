@@ -225,12 +225,6 @@ p b {
     margin-bottom: 1rem;
 }
 
-.top-bar img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .edge-col-top {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10+ */
@@ -248,12 +242,14 @@ p b {
 }
 
 .edge-col-top img {
-    height: 100%;
+    height: auto;
+    display: block;
     width: 100%;
 }
 
 .center-col-top img {
     height: 100%;
+    display: block;
     width: 100%;
 }
 
