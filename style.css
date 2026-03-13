@@ -225,6 +225,10 @@ p b {
     margin-bottom: 1rem;
 }
 
+.top-bar {
+    height: auto;
+}
+
 .edge-col-top {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10+ */
