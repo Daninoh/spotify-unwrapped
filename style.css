@@ -225,8 +225,10 @@ p b {
     margin-bottom: 1rem;
 }
 
-.top-bar {
+.top-bar img {
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 .edge-col-top {
