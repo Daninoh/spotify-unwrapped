@@ -242,7 +242,7 @@ p b {
 }
 
 .edge-col-top img {
-    height: auto;
+    height: 100%;
     display: block;
     width: 100%;
 }
@@ -251,6 +251,15 @@ p b {
     height: 100%;
     display: block;
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .edge-col-top img {
+        height: 169px;
+    }
+    .center-col-top img {
+        height: 169px;
+    }
 }
 
 .icon {
