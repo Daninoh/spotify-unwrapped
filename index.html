@@ -25,7 +25,9 @@
                     <img src="img/top-right.png" draggable="false" />
                 </div>
             </div>
-            <button class="refresh-butt" onClick="window.location.reload();" role="rewrap"></button>
+            <button class="refresh-butt tooltip" role="rewrap">
+                <span class="tooltiptext">Rewrap Gifts</span>
+            </button>
         </header>
 
         <main>
@@ -861,6 +863,20 @@
                     gift.style.display = "none";
                     message.classList.add("open");
                 });
+            });
+
+            function resetGifts() {
+                containers.forEach((container) => {
+                    const gift = container.querySelector(".gift");
+                    const message = container.querySelector(".giftText");
+
+                    gift.style.display = "";
+                    message.classList.remove("open");
+                });
+            }
+
+            document.querySelectorAll(".refresh-butt").forEach((button) => {
+                button.addEventListener("click", resetGifts);
             });
 
             // gift.addEventListener("mouseenter", () => {
