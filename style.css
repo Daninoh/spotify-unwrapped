@@ -229,6 +229,16 @@ p b {
     margin-bottom: 1rem;
 }
 
+.row-img {
+    display: flex;
+}
+
+.row-img img {
+    display: block;
+    width: 20%;
+    height: auto;
+}
+
 .edge-col {
     background-image: url("img/side-background-green.png");
     background-repeat: repeat;
