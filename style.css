@@ -6,6 +6,16 @@
   --spotify-dark: #0e853a;
 }
 
+::selection {
+  background: var(--spotify-dark);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--spotify-dark);
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
